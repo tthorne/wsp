@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Horse For Sale, Horses For Sale, Horse Classifieds, Horse Classified, Classified Horses, Classified Horse, Horse Classidied Ad, Horse Classidied Ads, Horse Trainers, Horse Trainer, Horse Breeds, Horse Breed, horse sales, sales horses"
+    />
+    <meta name="description" content="HorseWorld allows horse lovers, and fellow equestrians to list horses that they wish to sell, and for those looking to purchase. Also allows for breeders to list their stallions that are open for breeding.">
+    <meta name="author" content="Tara Thorne">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Horse World - Classifieds</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/theme.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Milonga" rel="stylesheet" type="text/css">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body role="document">
+
+    <!-- Fixed navbar -->
+    <div class="header">
+        <div class="container">
+			<div class="login">
+				<a href="login.html" class="login">Login</a>
+			</div>
+            <div class="logo">
+                <img src="images/logo.png" alt="HorseWorld Online Classifieds">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="index.html" data-toggle="tab">Home</a>
+                    </li>
+                    <li><a href="horses.html" data-toggle="tab">Horses</a>
+                    </li>
+                    <li><a href="trainers.html" data-toggle="tab">Trainers</a>
+                    </li>
+                    <li><a href="library.html" data-toggle="tab">Library</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <!-- Search -->
+    <div class="search">
+        <div class="form-grp">
+            <select id="type" name="typw" class="form">
+                <option value="Horses for Sale &amp; Lease">Horses for Sale &amp; Lease</option>
+                <option value="Horses for Sale">Horses for Sale</option>
+                <option value="Horses for Lease">Horses for Lease</option>
+                <option value="Horses for Stud">Horses for Stud</option>
+                <option value="Horses for Brood">Horses for Brood</option>
+                <option value="Trainer">Trainer</option>
+            </select>
+            <select id="state" name="state" class="form">
+                <option value="">-- Any --</option>
+                <option value="Region - Middle Atlantic">Region - Middle Atlantic</option>
+                <option value="Region - Midwest">Region - Midwest</option>
+                <option value="Region - New England">Region - New England</option>
+                <option value="Region - South">Region - South</option>
+                <option value="Region - Southwest">Region - Southwest</option>
+                <option value="Region - West">Region - West</option>
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Alberta, Canada">Alberta, Canada</option>
+                <option value="American Samoa">American Samoa</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Arizona">Arizona</option>
+                <option value="Arkansas">Arkansas</option>
+                <option value="Armed Forces Africa">Armed Forces Africa</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Brazil">Brazil</option>
+                <option value="British Columbia, Canada">British Columbia, Canada</option>
+                <option value="California">California</option>
+                <option value="Colorado">Colorado</option>
+                <option value="Connecticut">Connecticut</option>
+                <option value="Delaware">Delaware</option>
+                <option value="Denmark">Denmark</option>
+                <option value="District of Columbia">District of Columbia</option>
+                <option value="England">England</option>
+                <option value="Federated States of Micronesia">Federated States of Micronesia</option>
+                <option value="Florida">Florida</option>
+                <option value="France">France</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Guam">Guam</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Idaho">Idaho</option>
+                <option value="Illinois">Illinois</option>
+                <option value="Indiana">Indiana</option>
+                <option value="Iowa">Iowa</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Kansas">Kansas</option>
+                <option value="Kentucky">Kentucky</option>
+                <option value="Louisiana">Louisiana</option>
+                <option value="Maine">Maine</option>
+                <option value="Manitoba, Canada">Manitoba, Canada</option>
+                <option value="Marshall Islands">Marshall Islands</option>
+                <option value="Maryland">Maryland</option>
+                <option value="Massachusetts">Massachusetts</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Michigan">Michigan</option>
+                <option value="Minnesota">Minnesota</option>
+                <option value="Mississippi">Mississippi</option>
+                <option value="Missouri">Missouri</option>
+                <option value="Montana">Montana</option>
+                <option value="Nebraska">Nebraska</option>
+                <option value="Nevada">Nevada</option>
+                <option value="New Brunswick, Canada">New Brunswick, Canada</option>
+                <option value="New Hampshire">New Hampshire</option>
+                <option value="New Jersey">New Jersey</option>
+                <option value="New Mexico">New Mexico</option>
+                <option value="New York">New York</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Newfoundland">Newfoundland</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="North Carolina">North Carolina</option>
+                <option value="North Dakota">North Dakota</option>
+                <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                <option value="Northwest Territorie">Northwest Territories</option>
+                <option value="Nova Scotia, Canada">Nova Scotia, Canada</option>
+                <option value="Nunavut, Canada">Nunavut, Canada</option>
+                <option value="Ohio">Ohio</option>
+                <option value="Oklahoma">Oklahoma</option>
+                <option value="Ontario, Canada">Ontario, Canada</option>
+                <option value="Oregon">Oregon</option>
+                <option value="Other Location">Other Location</option>
+                <option value="Palau">Palau</option>
+                <option value="Pennsylvania">Pennsylvania</option>
+                <option value="Perth, Australia">Perth, Australia</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Prince Edward Island, Canada">Prince Edward Island, Canada</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Quebec, Canada">Quebec, Canada</option>
+                <option value="Rhode Island">Rhode Island</option>
+                <option value="Saskatchewan, Canada">Saskatchewan, Canada</option>
+                <option value="Scotland">Scotland</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Carolina">South Carolina</option>
+                <option value="South Dakota">South Dakota</option>
+                <option value="Spain">Spain</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Tennessee">Tennessee</option>
+                <option value="Texas">Texas</option>
+                <option value="The Netherlands">The Netherlands</option>
+                <option value="U.S. Virgin Islands">U.S. Virgin Islands</option>
+                <option value="Utah">Utah</option>
+                <option value="Vermont">Vermont</option>
+                <option value="Victoria, Australia">Victoria, Australia</option>
+                <option value="Virginia">Virginia</option>
+                <option value="Wales">Wales</option>
+                <option value="Washington">Washington</option>
+                <option value="West Virginia">West Virginia</option>
+                <option value="Wisconsin">Wisconsin</option>
+                <option value="Wyoming">Wyoming</option>
+                <option value="Yukon Territory, Canada">Yukon Territory, Canada</option>
+            </select>
+            <select id="discipline" name="discipline" class="form">
+                <option value="">-- Any --</option>
+                <option value="All Around">All Around</option>
+                <option value="Barrel Racing">Barrel Racing</option>
+                <option value="Beginner/Family">Beginner/Family</option>
+                <option value="Breeding">Breeding</option>
+                <option value="Brood Mare">Brood Mare</option>
+                <option value="Calf Roping">Calf Roping</option>
+                <option value="Companion Only">Companion Only</option>
+                <option value="Competitive Trail Competitions">Competitive Trail Competitions</option>
+                <option value="Country Pleasure">Country Pleasure</option>
+                <option value="Cowboy Mounted Shooting">Cowboy Mounted Shooting</option>
+                <option value="Cutting">Cutting</option>
+                <option value="Draft">Draft</option>
+                <option value="Dressage">Dressage</option>
+                <option value="Drill Team">Drill Team</option>
+                <option value="Driving">Driving</option>
+                <option value="Endurance Riding">Endurance Riding</option>
+                <option value="English Pleasure">English Pleasure</option>
+                <option value="Equitation">Equitation</option>
+                <option value="Eventing">Eventing</option>
+                <option value="Field Hunter">Field Hunter</option>
+                <option value="Gaited">Gaited</option>
+                <option value="Halter">Halter</option>
+                <option value="Harness">Harness</option>
+                <option value="Horsemanship">Horsemanship</option>
+                <option value="Hunter">Hunter</option>
+                <option value="Hunter Under Saddle">Hunter Under Saddle</option>
+                <option value="Judged Pleasure Rides">Judged Pleasure Rides</option>
+                <option value="Jumper">Jumper</option>
+                <option value="Lesson Horse">Lesson Horse</option>
+                <option value="Longe-Line">Longe-Line</option>
+                <option value="Not Applicable">Not Applicable</option>
+                <option value="Pleasure Driving">Pleasure Driving</option>
+                <option value="Pole Bending">Pole Bending</option>
+                <option value="Polo">Polo</option>
+                <option value="Racing">Racing</option>
+                <option value="Ranch Horse">Ranch Horse</option>
+                <option value="Ranch Sorting">Ranch Sorting</option>
+                <option value="Reined Cow Horse">Reined Cow Horse</option>
+                <option value="Reining">Reining</option>
+                <option value="Showmanship">Showmanship</option>
+                <option value="Sidesaddle">Sidesaddle</option>
+                <option value="Steer Wrestling">Steer Wrestling</option>
+                <option value="Team Penning">Team Penning</option>
+                <option value="Team Roping">Team Roping</option>
+                <option value="Team Sorting">Team Sorting</option>
+                <option value="Trail Horse">Trail Horse</option>
+                <option value="Vaulting">Vaulting</option>
+                <option value="Western Pleasure">Western Pleasure</option>
+                <option value="Western Pleasure (Show)">Western Pleasure (Show)</option>
+                <option value="Western Riding">Western Riding</option>
+                <option value="Working Cow Horse">Working Cow Horse</option>
+                <option value="Youth/4-H Horse">Youth/4-H Horse</option>
+            </select>
+            <input type="text" id="title" name="title" placeholder="Enter Name or Breed" class="form" />
+            <button type="button" class="formbtn formbtn-default">Default</button>
+            <a href="search.html" class="advanceform">Advanced Search</a>
+        </div>
+    </div>
+
+    <div class="container theme-showcase" role="main">
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="featurepanel featurepanel-default clearfix">
+            <div class="featurepanel-heading">
+                <div class="col-lg-6">
+                    <h3 class="featurepanel-title">Featured Horse For Sale</h3>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="featurepanel-title">Alonso</h3>
+                </div>
+            </div>
+            <div class="featurepanel-body">
+                <div class="col-lg-6">
+                    <img src="images/alonso1.jpg" alt="Alonso" class="feature">
+                </div>
+                <div class="col-lg-6">
+                    <div class="col-lg-3">
+                        <p><strong>Year Of Birth:</strong>
+                            <br />
+                            <br />
+                            <strong>Color:</strong>
+                            <br />
+                            <br />
+                            <strong>Breed:</strong>
+                            <br />
+                            <br />
+                            <strong>Gender:</strong>
+                            <br />
+                            <br />
+                            <strong>Disciplines:</strong>
+                        </p>
+                    </div>
+                    <div class="col-lg-9">
+                        <p>2006
+                            <br />
+                            <br />Black Bay
+                            <br />
+                            <br />Dutch Warmblood
+                            <br />
+                            <br />Gelding
+                            <br />
+                            <br />Show Jumping</p>
+                    </div>
+                    <p>Alonso is the picture of breed perfection. He has long straight legs and a broad chest, making him the ideal jumper. With his gorgeous head and wide set eyes Alonso is a magnificent stallion. Alonso is an exceptional jumper, clearing
+                        even the most daunting jumps with flawless execution. He's every rider's dream, shortening his strides when he needs to, lengthening them before asked, and never having to worry about time penalties. Alonso is every rider's dream
+                        to compete with. His eagerness to please makes him tough to beat in the show ring but confident in training. Our hopes for Alonso are that he will retire as a Grand Prix jumper and pass his conformation and willingness to work
+                        onto his offspring.
+                        <br />
+                        <br />
+
+                        <strong>Sale Price: $10,000</strong>
+                    </p>
+                    <div class="featurepanel-footer">
+                        <p><a href="#" class="feature">View More Details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix">
+            <div class="col-sm-4 clearfix">
+                <div class="latestpanel latestpanel-default">
+                    <div class="latestpanel-heading">
+                        <h3 class="latestpanel-title">Latest Sales Listings</h3>
+                    </div>
+                    <div class="latestpanel-body clearfix">
+                        <div class="col-lg-6">
+                            <img src="images/corinna8.jpg" alt="Corinna" class="latest">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="latestpanel-infotitle"><a href="">Corinna</a>
+                            </p>
+                            <p class="latestpanel-info">2006 Grey Dutch Warmblood Mare
+                                <br>
+                                <br/>Corinna has a great jump. She's always big and clear. She always takes the jumps in stride.</p>
+                            <p class="latestpanel-infotitle"><strong>Price: $20,000</strong>
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="images/addler6.jpg" alt="Addler" class="latest">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="latestpanel-infotitle"><a href="">Addler</a>
+                            </p>
+                            <p class="latestpanel-info">2013 Bay Dutch Warmblood Colt
+                                <br>
+                                <br/>Addler is a very sweet, curious and bold colt. He is very people oriented and loves to have attention.</p>
+                            <p class="latestpanel-infotitle"><strong>Price: $15,000</strong>
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="images/baldur10.jpg" alt="Baldur" class="latest">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="latestpanel-infotitle"><a href="">Baldur</a>
+                            </p>
+                            <p class="latestpanel-info">2006 Bay Dutch Warmblood Stallion
+                                <br>
+                                <br/>Baldur is quick on his feet and his powerful hindquarters launch him easily over the jumps.</p>
+                            <p class="latestpanel-infotitle"><strong>Price: $1,000</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-sm-4 -->
+            <div class="col-sm-4 clearfix">
+                <div class="latestpanel latestpanel-default">
+                    <div class="latestpanel-heading">
+                        <h3 class="latestpanel-title">Latest Stud Listings</h3>
+                    </div>
+                    <div class="latestpanel-body clearfix">
+                        <div class="col-lg-6">
+                            <img src="images/dietmar8.jpg" alt="Dietmar" class="latest">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="latestpanel-infotitle"><a href="">Dietmar</a>
+                            </p>
+                            <p class="latestpanel-info">2006 Chestnut Dutch Warmblood Stallion
+                                <br>
+                                <br/>Dietmar is a huge horse, very correctly built with a well sprung rib cage and nice straight legs.</p>
+                            <p class="latestpanel-infotitle"><strong>Stud Fee: $1,000</strong>
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="images/carsten8.jpg" alt="Carsten" class="latest">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="latestpanel-infotitle"><a href="">Carsten</a>
+                            </p>
+                            <p class="latestpanel-info">2007 Grey Dutch Warmblood Stallion
+                                <br>
+                                <br/>Carsten is a well conformed, very athletic and has a great attitued that is just starting his show carrer.</p>
+                            <p class="latestpanel-infotitle"><strong>Stud Fee: $2,000</strong>
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="images/pharamond6.jpg" alt="Pharamond" class="latest">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="latestpanel-infotitle"><a href="">Pharamond</a>
+                            </p>
+                            <p class="latestpanel-info">2007 Bay Dutch Warmblood Stallion
+                                <br>
+                                <br/>Pharamond is a jumper, but he has beautiful gaits and would be an ideal sire for any discipline.</p>
+                            <p class="latestpanel-infotitle"><strong>Stud Fee: $1,500</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-sm-4 -->
+            <div class="col-sm-4 clearfix">
+                <div class="latestpanel latestpanel-default">
+                    <div class="latestpanel-heading">
+                        <h3 class="latestpanel-title">Latest Trainer Ads</h3>
+                    </div>
+                    <div class="latestpanel-body clearfix">
+                        <div class="col-lg-6">
+                            <img src="images/natalyaevans.jpg" alt="Natalya Evans" class="latest">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="latestpanel-infotitle"><a href="">Natalya Evans</a>
+                            </p>
+                            <p class="latestpanel-info">Natalya began competing in Dressage as a junior rider, and moved up the ranks pretty quickly to to evenuatlly to grand prix level. She has won many championships throughout her show career. Contact her today.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="images/michaelflemming.jpg" alt="Michael Flemming" class="latest">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="latestpanel-infotitle"><a href="">Michael Flemming</a>
+                            </p>
+                            <p class="latestpanel-info">Training horses runs in Michael's family, so he began riding before he could walk. He loves the speed and thrills of show jumping, and he loves working with the children teaching them how to jump. Contact him today.
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="images/lilysmith.jpg" alt="Lily Smith" class="latest">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="latestpanel-infotitle"><a href="">Lily Evans</a>
+                            </p>
+                            <p class="latestpanel-info">Lily wants to make your child's equestrian dreams come true. She many not have as many awards as some trainers, but those that she has worked with in the past have gone on to win championships.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-sm-4 -->
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+    <footer>
+        <div class="foot">
+            <div class="col-sm-6 clearfix">
+                <p><a href="index.html" class="link">Home</a> | <a href="horses.html" class="link">Horses</a> | <a href="trainers.html" class="link">Trainers</a> | <a href="library.html" class="link">Library</a></p>
+            </div>
+            <div class="col-sm-6 clearfix">
+				<div class="span4">Share:
+				<a href="https://plus.google.com/" target="blank"><img src="images/google.png" height="31" width="31" alt="Google +"></a>
+				<a href="https://www.facebook.com/" target="blank"><img src="images/facebook.png" height="31" width="31" alt="Facebook"></a>
+				<a href="https://twitter.com/" target="blank"><img src="images/twitter.png" height="31" width="31" alt="Twitter"></a>
+				<a href="http://instagram.com/" target="blank"><img src="images/instagram.png" height="31" width="31" alt="Instagram"></a>
+						</div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+</body>
+
+</html>

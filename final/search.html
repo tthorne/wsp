@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Horse For Sale, Horses For Sale, Horse Classifieds, Horse Classified, Classified Horses, Classified Horse, Horse Classidied Ad, Horse Classidied Ads, Horse Trainers, Horse Trainer, Horse Breeds, Horse Breed, horse sales, sales horses"
+    />
+    <meta name="description" content="HorseWorld allows horse lovers, and fellow equestrians to list horses that they wish to sell, and for those looking to purchase. Also allows for breeders to list their stallions that are open for breeding.">
+    <meta name="author" content="Tara Thorne">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Horse World - Classifieds</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/theme.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Milonga" rel="stylesheet" type="text/css">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body role="document">
+
+    <!-- Fixed navbar -->
+    <div class="header">
+        <div class="container">
+            <div class="login">
+                <a href="signup.html" class="login">Sign Up</a>
+            </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="HorseWorld Online Classifieds">
+                <ul class="nav nav-tabs">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="horses.html">Horses</a>
+                    </li>
+                    <li><a href="trainers.html">Trainers</a>
+                    </li>
+                    <li><a href="library.html">Library</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <div class="container theme-showcase" role="main">
+        <div class="loginform">
+            <h1>Advanced Search</h1>
+            <form role="form">
+                <div class="form-group">
+                    <label>Type of Search</label>
+                    <select id="type" name="typw" class="form-control">
+                        <option value="Horses for Sale &amp; Lease">Horses for Sale &amp; Lease</option>
+                        <option value="Horses for Sale">Horses for Sale</option>
+                        <option value="Horses for Lease">Horses for Lease</option>
+                        <option value="Horses for Stud">Horses for Stud</option>
+                        <option value="Horses for Brood">Horses for Brood</option>
+                        <option value="Trainer">Trainer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Location</label>
+                    <select id="state" name="state" multiple="multiple" size="4" class="form-control">
+                        <option value="">-- Any --</option>
+                        <option value="Region - Middle Atlantic">Region - Middle Atlantic</option>
+                        <option value="Region - Midwest">Region - Midwest</option>
+                        <option value="Region - New England">Region - New England</option>
+                        <option value="Region - South">Region - South</option>
+                        <option value="Region - Southwest">Region - Southwest</option>
+                        <option value="Region - West">Region - West</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Alberta, Canada">Alberta, Canada</option>
+                        <option value="American Samoa">American Samoa</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="Armed Forces Africa">Armed Forces Africa</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="Bermuda">Bermuda</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="British Columbia, Canada">British Columbia, Canada</option>
+                        <option value="California">California</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Delaware">Delaware</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="District of Columbia">District of Columbia</option>
+                        <option value="England">England</option>
+                        <option value="Federated States of Micronesia">Federated States of Micronesia</option>
+                        <option value="Florida">Florida</option>
+                        <option value="France">France</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Guam">Guam</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Ireland">Ireland</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Louisiana">Louisiana</option>
+                        <option value="Maine">Maine</option>
+                        <option value="Manitoba, Canada">Manitoba, Canada</option>
+                        <option value="Marshall Islands">Marshall Islands</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Mississippi">Mississippi</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="Montana">Montana</option>
+                        <option value="Nebraska">Nebraska</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="New Brunswick, Canada">New Brunswick, Canada</option>
+                        <option value="New Hampshire">New Hampshire</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New Mexico">New Mexico</option>
+                        <option value="New York">New York</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="Newfoundland">Newfoundland</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="North Carolina">North Carolina</option>
+                        <option value="North Dakota">North Dakota</option>
+                        <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                        <option value="Northwest Territorie">Northwest Territories</option>
+                        <option value="Nova Scotia, Canada">Nova Scotia, Canada</option>
+                        <option value="Nunavut, Canada">Nunavut, Canada</option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Ontario, Canada">Ontario, Canada</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Other Location">Other Location</option>
+                        <option value="Palau">Palau</option>
+                        <option value="Pennsylvania">Pennsylvania</option>
+                        <option value="Perth, Australia">Perth, Australia</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Prince Edward Island, Canada">Prince Edward Island, Canada</option>
+                        <option value="Puerto Rico">Puerto Rico</option>
+                        <option value="Quebec, Canada">Quebec, Canada</option>
+                        <option value="Rhode Island">Rhode Island</option>
+                        <option value="Saskatchewan, Canada">Saskatchewan, Canada</option>
+                        <option value="Scotland">Scotland</option>
+                        <option value="Slovakia">Slovakia</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="South Carolina">South Carolina</option>
+                        <option value="South Dakota">South Dakota</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Texas">Texas</option>
+                        <option value="The Netherlands">The Netherlands</option>
+                        <option value="U.S. Virgin Islands">U.S. Virgin Islands</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Vermont">Vermont</option>
+                        <option value="Victoria, Australia">Victoria, Australia</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Wales">Wales</option>
+                        <option value="Washington">Washington</option>
+                        <option value="West Virginia">West Virginia</option>
+                        <option value="Wisconsin">Wisconsin</option>
+                        <option value="Wyoming">Wyoming</option>
+                        <option value="Yukon Territory, Canada">Yukon Territory, Canada</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Zip Code</label>
+                    <input type="text" name="zipcode" placeholder="Enter Zip Code" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="range" name="points" id="points" value="50" min="0" max="100" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Breed</label>
+                    <select id="breed" name="breed" multiple="multiple" size="4" class="form-control">
+                        <option value="">-- Any --</option>
+						<option value="Abaco Barb">Abaco Barb</option>
+						<option value="Abstang">Abstang</option>
+						<option value="Abtenauer">Abtenauer</option>
+						<option value="Abyssinian Horse">Abyssinian Horse</option>
+						<option value="Adaev">Adaev</option>
+						<option value="Aegidienberger">Aegidienberger</option>
+						<option value="Akhal-Teke">Akhal-Teke</option>
+						<option value="Albanian Horse">Albanian Horse</option>
+						<option value="Altai">Altai</option>
+						<option value="Alter Real">Alter Real</option>
+						<option value="Altwurttemberg">Altwurttemberg</option>
+						<option value="American Albino">American Albino</option>
+						<option value="American Bashkir">American Bashkir</option>
+						<option value="American Cream Draft">American Cream Draft</option>
+						<option value="American Drum Horse">American Drum Horse</option>
+						<option value="American Indian Horse">American Indian Horse</option>
+						<option value="American Mammoth Jack">American Mammoth Jack</option>
+						<option value="American Miniature Horse">American Miniature Horse</option>
+						<option value="American Mustang">American Mustang</option>
+						<option value="American Paint Horse">American Paint Horse</option>
+						<option value="American Quarter Horse">American Quarter Horse</option>
+						<option value="American Saddlebred">American Saddlebred</option>
+						<option value="American Shetland">American Shetland</option>
+						<option value="American Sport Pony">American Sport Pony</option>
+						<option value="American Spotted Paso">American Spotted Paso</option>
+						<option value="American Standardbred">American Standardbred</option>
+						<option value="American Thoroughbred">American Thoroughbred</option>
+						<option value="American Walking Pony">American Walking Pony</option>
+						<option value="American Warmblood">American Warmblood</option>
+						<option value="Amur">Amur</option>
+						<option value="Anadolu Pony">Anadolu Pony</option>
+						<option value="Andalusian">Andalusian</option>
+						<option value="Andean">Andean</option>
+						<option value="Andravida">Andravida</option>
+						<option value="Anglo-Arabian">Anglo-Arabian</option>
+						<option value="Anglo-Kabarda">Anglo-Kabarda</option>
+						<option value="Anglo-Karachai">Anglo-Karachai</option>
+						<option value="Anglo-Luso">Anglo-Luso</option>
+						<option value="Appaloosa">Appaloosa</option>
+						<option value="Appaloosa Sport Horse">Appaloosa Sport Horse</option>
+						<option value="Appendix Quarter Horse">Appendix Quarter Horse</option>
+						<option value="AraAppaloosa">AraAppaloosa</option>
+						<option value="Arabian">Arabian</option>
+						<option value="Arabian-Berber">Arabian-Berber</option>
+						<option value="Arabian-Haflinger">Arabian-Haflinger</option>
+						<option value="Arabo-Friesian">Arabo-Friesian</option>
+						<option value="Araboulonnais">Araboulonnais</option>
+						<option value="Aralusian">Aralusian</option>
+						<option value="Ardahan">Ardahan</option>
+						<option value="Ardennes">Ardennes</option>
+						<option value="Arenberg-Nordkirchener">Arenberg-Nordkirchener</option>
+						<option value="Argentine Anglo">Argentine Anglo</option>
+						<option value="Argentine Criollo">Argentine Criollo</option>
+						<option value="Argentine Polo Pony">Argentine Polo Pony</option>
+						<option value="Argentinean Modepony">Argentinean Modepony</option>
+						<option value="Argentinian Ranch Horse">Argentinian Ranch Horse</option>
+						<option value="Ariegeois Pony">Ariegeois Pony</option>
+						<option value="Arravani">Arravani</option>
+						<option value="Asiatic Wild Horse">Asiatic Wild Horse</option>
+						<option value="Asil">Asil</option>
+						<option value="Assateague Pony">Assateague Pony</option>
+						<option value="Astrakhan">Astrakhan</option>
+						<option value="Asturcon">Asturcon</option>
+						<option value="Australian Brumby">Australian Brumby</option>
+						<option value="Australian Draught">Australian Draught</option>
+						<option value="Australian Pony">Australian Pony</option>
+						<option value="Australian Stock horse">Australian Stock horse</option>
+						<option value="Australian Warmblood">Australian Warmblood</option>
+						<option value="Austrian Warmblood">Austrian Warmblood</option>
+						<option value="Autre Que Pur Sang">Autre Que Pur Sang</option>
+						<option value="Auxois">Auxois</option>
+						<option value="Avelignese">Avelignese</option>
+						<option value="Azerbaijan">Azerbaijan</option>
+						<option value="Azores">Azores</option>
+						<option value="Azteca">Azteca</option>
+						<option value="Baguales">Baguales</option>
+						<option value="Baguio Light Horse">Baguio Light Horse</option>
+						<option value="Baguio Pony">Baguio Pony</option>
+						<option value="Bahr-El-Ghazal">Bahr-El-Ghazal</option>
+						<option value="Baikal">Baikal</option>
+						<option value="Baise">Baise</option>
+						<option value="Baixadeiro Horse">Baixadeiro Horse</option>
+						<option value="Bajau Pony">Bajau Pony</option>
+						<option value="Bakhtiari">Bakhtiari</option>
+						<option value="Baladi">Baladi</option>
+						<option value="Balearic Horse">Balearic Horse</option>
+						<option value="Bali Pony">Bali Pony</option>
+						<option value="Balikun Horse">Balikun Horse</option>
+						<option value="Baluchi Horse">Baluchi Horse</option>
+						<option value="Ban-ei">Ban-ei</option>
+						<option value="Banamba">Banamba</option>
+						<option value="Banat">Banat</option>
+						<option value="Bandiagara">Bandiagara</option>
+						<option value="Banker Pony">Banker Pony</option>
+						<option value="Barb">Barb</option>
+						<option value="Bardigiano">Bardigiano</option>
+						<option value="Barra">Barra</option>
+						<option value="Barthais Pony">Barthais Pony</option>
+						<option value="Bashkir Horse">Bashkir Horse</option>
+						<option value="Basotho Pony">Basotho Pony</option>
+						<option value="Basque Pony">Basque Pony</option>
+						<option value="Batak Pony">Batak Pony</option>
+						<option value="Bavarian Warmblood">Bavarian Warmblood</option>
+						<option value="Beledougou">Beledougou</option>
+						<option value="Belgian Ardennais">Belgian Ardennais</option>
+						<option value="Belgian Draft">Belgian Draft</option>
+						<option value="Belgian Sport Horse">Belgian Sport Horse</option>
+						<option value="Belgian Warmblood">Belgian Warmblood</option>
+						<option value="Bergmann Pony">Bergmann Pony</option>
+						<option value="Bhorum Pony">Bhorum Pony</option>
+						<option value="Bhotia Pony">Bhotia Pony</option>
+						<option value="Bidet Horse">Bidet Horse</option>
+						<option value="Bigourdan Horse">Bigourdan Horse</option>
+						<option value="Bitcuk">Bitcuk</option>
+						<option value="Black Forest Horse">Black Forest Horse</option>
+						<option value="Black Sea Horse">Black Sea Horse</option>
+						<option value="Blazer Horse">Blazer Horse</option>
+						<option value="Boerperd">Boerperd</option>
+						<option value="Bolivian Pony">Bolivian Pony</option>
+						<option value="Borneo Pony">Borneo Pony</option>
+						<option value="Bose Pony">Bose Pony</option>
+						<option value="Bosnian Pony">Bosnian Pony</option>
+						<option value="Boulonnais">Boulonnais</option>
+						<option value="Brabant">Brabant</option>
+						<option value="Brandenburger">Brandenburger</option>
+						<option value="Brazilian Pony">Brazilian Pony</option>
+						<option value="Brazilian Sport Horse">Brazilian Sport Horse</option>
+						<option value="Breton">Breton</option>
+						<option value="British Appaloosa">British Appaloosa</option>
+						<option value="British Riding Pony">British Riding Pony</option>
+						<option value="British Shetland">British Shetland</option>
+						<option value="British Spotted Pony">British Spotted Pony</option>
+						<option value="British Thoroughbred">British Thoroughbred</option>
+						<option value="British Warmblood">British Warmblood</option>
+						<option value="Brumby">Brumby</option>
+						<option value="Buckskin">Buckskin</option>
+						<option value="Bucovina">Bucovina</option>
+						<option value="Budyonny">Budyonny</option>
+						<option value="Bulgarian Native Horse">Bulgarian Native Horse</option>
+						<option value="Buohai">Buohai</option>
+						<option value="Burmese Pony">Burmese Pony</option>
+						<option value="Buryat">Buryat</option>
+						<option value="Busak Posavec">Busak Posavec</option>
+						<option value="Byelorussian Harness Horse">Byelorussian Harness Horse</option>
+						<option value="Calabrese">Calabrese</option>
+						<option value="Calvinia Horse">Calvinia Horse</option>
+						<option value="Camargue Horse">Camargue Horse</option>
+						<option value="Camarillo White Horse">Camarillo White Horse</option>
+						<option value="Campeiro">Campeiro</option>
+						<option value="Campolina">Campolina</option>
+						<option value="Canadian Cutting Horse">Canadian Cutting Horse</option>
+						<option value="Canadian Horse">Canadian Horse</option>
+						<option value="Canadian Pacer">Canadian Pacer</option>
+						<option value="Canadian Rustic Pony">Canadian Rustic Pony</option>
+						<option value="Canadian Sport Horse">Canadian Sport Horse</option>
+						<option value="Canadian Warmblood">Canadian Warmblood</option>
+						<option value="Canik">Canik</option>
+						<option value="Cape Harness">Cape Harness</option>
+						<option value="Cape Horse">Cape Horse</option>
+						<option value="Carolina Marsh Tacky">Carolina Marsh Tacky</option>
+						<option value="Carpathian Pony">Carpathian Pony</option>
+						<option value="Carthusian Horse">Carthusian Horse</option>
+						<option value="Caspian">Caspian</option>
+						<option value="Castilian Horse">Castilian Horse</option>
+						<option value="Catria Horse">Catria Horse</option>
+						<option value="Cayuse Pony">Cayuse Pony</option>
+						<option value="Celtic Pony">Celtic Pony</option>
+						<option value="Cerbat Mustang">Cerbat Mustang</option>
+						<option value="Certisino">Certisino</option>
+						<option value="Chahou Post Pony">Chahou Post Pony</option>
+						<option value="Chaidamu Pony">Chaidamu Pony</option>
+						<option value="Chakouyi">Chakouyi</option>
+						<option value="Chalosse Pony">Chalosse Pony</option>
+						<option value="Champagne Horse">Champagne Horse</option>
+						<option value="Chamurthi">Chamurthi</option>
+						<option value="Chapman Horse">Chapman Horse</option>
+						<option value="Charentais">Charentais</option>
+						<option value="Charollais">Charollais</option>
+						<option value="Charysh / Chara">Charysh / Chara</option>
+						<option value="Cheju Pony">Cheju Pony</option>
+						<option value="Cheval de Corlay">Cheval de Corlay</option>
+						<option value="Cheval Demi sang du Centre">Cheval Demi sang du Centre</option>
+						<option value="Cheval d'Auvergne">Cheval d'Auvergne</option>
+						<option value="Chickasaw Horse">Chickasaw Horse</option>
+						<option value="Chicksaw Pony">Chicksaw Pony</option>
+						<option value="Chilean Corralero">Chilean Corralero</option>
+						<option value="Chilkow">Chilkow</option>
+						<option value="Chilote Pony">Chilote Pony</option>
+						<option value="Chincoteague Pony">Chincoteague Pony</option>
+						<option value="Choctaw Horse">Choctaw Horse</option>
+						<option value="Chumbivilcas Horse">Chumbivilcas Horse</option>
+						<option value="Chumysh Horse">Chumysh Horse</option>
+						<option value="Chyanta Pony">Chyanta Pony</option>
+						<option value="Cimarron Horse">Cimarron Horse</option>
+						<option value="Cleveland Bay">Cleveland Bay</option>
+						<option value="Clydesdale">Clydesdale</option>
+						<option value="Cob">Cob</option>
+						<option value="Coffin Bay Pony">Coffin Bay Pony</option>
+						<option value="Coldblooded Trotter">Coldblooded Trotter</option>
+						<option value="Colonial Spanish">Colonial Spanish</option>
+						<option value="Colorado Ranger">Colorado Ranger</option>
+						<option value="Comtois horse">Comtois horse</option>
+						<option value="Conestoga Horse">Conestoga Horse</option>
+						<option value="Connemara Pony">Connemara Pony</option>
+						<option value="Corajoso">Corajoso</option>
+						<option value="Corolla Island Pony">Corolla Island Pony</option>
+						<option value="Corsican Horse">Corsican Horse</option>
+						<option value="Cossak Horse">Cossak Horse</option>
+						<option value="Costa Rican Saddle Horse">Costa Rican Saddle Horse</option>
+						<option value="Country Saddle Horse">Country Saddle Horse</option>
+						<option value="Cretan Horse">Cretan Horse</option>
+						<option value="Criollo">Criollo</option>
+						<option value="Crioulo">Crioulo</option>
+						<option value="Crioulo Brasileiro">Crioulo Brasileiro</option>
+						<option value="Croatian Hladnokrvnjak">Croatian Hladnokrvnjak</option>
+						<option value="Croatian Posavac">Croatian Posavac</option>
+						<option value="Cuban Paso">Cuban Paso</option>
+						<option value="Cuban Pinto">Cuban Pinto</option>
+						<option value="Cukurova">Cukurova</option>
+						<option value="Curly Haired Fox Trotter">Curly Haired Fox Trotter</option>
+						<option value="Curly Horse">Curly Horse</option>
+						<option value="Cutchi">Cutchi</option>
+						<option value="Czech Coldblood">Czech Coldblood</option>
+						<option value="Czech Warmblood">Czech Warmblood</option>
+						<option value="Czechoslovakian Small Riding Horse">Czechoslovakian Small Riding Horse</option>
+						<option value="Dagestan Pony">Dagestan Pony</option>
+						<option value="Dahoman">Dahoman</option>
+						<option value="Dales Pony">Dales Pony</option>
+						<option value="Daliboz Horse">Daliboz Horse</option>
+						<option value="Danish Sport Pony">Danish Sport Pony</option>
+						<option value="Danish Wamblood">Danish Wamblood</option>
+						<option value="Danube Delta Horse">Danube Delta Horse</option>
+						<option value="Danubian">Danubian</option>
+						<option value="Darashouri">Darashouri</option>
+						<option value="Darfur Pony">Darfur Pony</option>
+						<option value="Dartmoor Pony">Dartmoor Pony</option>
+						<option value="Datong Horse">Datong Horse</option>
+						<option value="Debao Pony">Debao Pony</option>
+						<option value="Deli Pony">Deli Pony</option>
+						<option value="Deliorman">Deliorman</option>
+						<option value="Desert Norman Horse">Desert Norman Horse</option>
+						<option value="Deutsches Reitpony">Deutsches Reitpony</option>
+						<option value="Dilbaz">Dilbaz</option>
+						<option value="Djamoi">Djamoi</option>
+						<option value="Djerma Horse">Djerma Horse</option>
+						<option value="Dolny-Iskar">Dolny-Iskar</option>
+						<option value="Don">Don</option>
+						<option value="Dongola">Dongola</option>
+						<option value="Dosanko Horse">Dosanko Horse</option>
+						<option value="Drum Horse">Drum Horse</option>
+						<option value="Dülmen Pony">Dülmen Pony</option>
+						<option value="Dutch Draft">Dutch Draft</option>
+						<option value="Dutch Harness Horse">Dutch Harness Horse</option>
+						<option value="Dutch Warmblood">Dutch Warmblood</option>
+						<option value="Dutch Warmblood">Dutch Warmblood</option>
+						<option value="Dzhabe">Dzhabe</option>
+						<option value="Døle Gudbrandsdal">Døle Gudbrandsdal</option>
+						<option value="East Bulgarian Horse">East Bulgarian Horse</option>
+						<option value="East Friesian Horse">East Friesian Horse</option>
+						<option value="East Friesian Warmblood">East Friesian Warmblood</option>
+						<option value="East Prussian">East Prussian</option>
+						<option value="Edelbluthaflinger">Edelbluthaflinger</option>
+						<option value="Ege Midillisi">Ege Midillisi</option>
+						<option value="Egyptian Arabian">Egyptian Arabian</option>
+						<option value="Einsiedler">Einsiedler</option>
+						<option value="Eleia">Eleia</option>
+						<option value="Equus Kinsky">Equus Kinsky</option>
+						<option value="Equus Przewalskii">Equus Przewalskii</option>
+						<option value="Eriskay Pony">Eriskay Pony</option>
+						<option value="Erlanbach">Erlanbach</option>
+						<option value="Erlunchun">Erlunchun</option>
+						<option value="Esperia Pony">Esperia Pony</option>
+						<option value="Estonian Draft">Estonian Draft</option>
+						<option value="Estonian Native">Estonian Native</option>
+						<option value="Exmoor Pony">Exmoor Pony</option>
+						<option value="Faca Galizana">Faca Galizana</option>
+						<option value="Falabella">Falabella</option>
+						<option value="Faroe Pony">Faroe Pony</option>
+						<option value="Fell Pony">Fell Pony</option>
+						<option value="Finnhorse">Finnhorse</option>
+						<option value="Finnish Warmblood">Finnish Warmblood</option>
+						<option value="Fjord horse">Fjord horse</option>
+						<option value="Flemish Horse">Flemish Horse</option>
+						<option value="Fleuve">Fleuve</option>
+						<option value="Flores Pony">Flores Pony</option>
+						<option value="Florida Cracker Horse">Florida Cracker Horse</option>
+						<option value="Foundation Quarter Horse">Foundation Quarter Horse</option>
+						<option value="Fouta Horse">Fouta Horse</option>
+						<option value="Frederiksborg Horse">Frederiksborg Horse</option>
+						<option value="Freiberger">Freiberger</option>
+						<option value="French Anglo Arab">French Anglo Arab</option>
+						<option value="French Ardennais">French Ardennais</option>
+						<option value="French Cob">French Cob</option>
+						<option value="French Saddle Pony">French Saddle Pony</option>
+						<option value="French Saddlebred">French Saddlebred</option>
+						<option value="French Sport Horse">French Sport Horse</option>
+						<option value="French Trotter">French Trotter</option>
+						<option value="Friesian">Friesian</option>
+						<option value="Friesian Sporthorse">Friesian Sporthorse</option>
+						<option value="Furioso Horse">Furioso Horse</option>
+						<option value="Galiceno Pony">Galiceno Pony</option>
+						<option value="Galician Pony">Galician Pony</option>
+						<option value="Galloway Pony">Galloway Pony</option>
+						<option value="Galshar">Galshar</option>
+						<option value="Garrano">Garrano</option>
+						<option value="Gayoe Pony">Gayoe Pony</option>
+						<option value="Gelderlander">Gelderlander</option>
+						<option value="Georgian Grande">Georgian Grande</option>
+						<option value="German Coach Horse">German Coach Horse</option>
+						<option value="German Cold-Blooded">German Cold-Blooded</option>
+						<option value="German Riding Pony">German Riding Pony</option>
+						<option value="Gharbaui">Gharbaui</option>
+						<option value="Gharkawi">Gharkawi</option>
+						<option value="Ghazi">Ghazi</option>
+						<option value="Giara">Giara</option>
+						<option value="Gidran">Gidran</option>
+						<option value="Glasinacki">Glasinacki</option>
+						<option value="Goklan">Goklan</option>
+						<option value="Golden American Saddlebred">Golden American Saddlebred</option>
+						<option value="Golden Horse of Bohemia">Golden Horse of Bohemia</option>
+						<option value="Gotland Pony">Gotland Pony</option>
+						<option value="Grand Noir du Berry Donkey">Grand Noir du Berry Donkey</option>
+						<option value="Great Poland Horse">Great Poland Horse</option>
+						<option value="Greek Pony">Greek Pony</option>
+						<option value="Greyson Highlands Ponies">Greyson Highlands Ponies</option>
+						<option value="Groningen Horse">Groningen Horse</option>
+						<option value="Guangxi Horse">Guangxi Horse</option>
+						<option value="Guanzhong">Guanzhong</option>
+						<option value="Guba">Guba</option>
+						<option value="Guizhou Pony">Guizhou Pony</option>
+						<option value="Guoxia Pony">Guoxia Pony</option>
+						<option value="Gutsul">Gutsul</option>
+						<option value="Gypsy Vanner">Gypsy Vanner</option>
+						<option value="Hackney Horse">Hackney Horse</option>
+						<option value="Hackney Pony">Hackney Pony</option>
+						<option value="Haflinger">Haflinger</option>
+						<option value="Half-Saddlebred">Half-Saddlebred</option>
+						<option value="Handachine Horse">Handachine Horse</option>
+						<option value="Hanoverian">Hanoverian</option>
+						<option value="Hantam Horse">Hantam Horse</option>
+						<option value="Harddraver">Harddraver</option>
+						<option value="Harna">Harna</option>
+						<option value="Hebridean Pony">Hebridean Pony</option>
+						<option value="Heck Horse">Heck Horse</option>
+						<option value="Heihe Horse">Heihe Horse</option>
+						<option value="Heilongkiang">Heilongkiang</option>
+						<option value="Henson Horse">Henson Horse</option>
+						<option value="Hequ">Hequ</option>
+						<option value="Hessen Horse">Hessen Horse</option>
+						<option value="Highlander Horse">Highlander Horse</option>
+						<option value="Hinis Horse">Hinis Horse</option>
+						<option value="Hirzai">Hirzai</option>
+						<option value="Hispano Arabe">Hispano Arabe</option>
+						<option value="Hmong Horse">Hmong Horse</option>
+						<option value="Hokkaido Pony">Hokkaido Pony</option>
+						<option value="Holsteiner">Holsteiner</option>
+						<option value="Holsteiner Coldblood">Holsteiner Coldblood</option>
+						<option value="Horse of the Americas">Horse of the Americas</option>
+						<option value="Hrvatski Hladnokrvnjak">Hrvatski Hladnokrvnjak</option>
+						<option value="Hrvatski Posavac">Hrvatski Posavac</option>
+						<option value="Hucul">Hucul</option>
+						<option value="Hungarian Draft">Hungarian Draft</option>
+						<option value="Hungarian Dun">Hungarian Dun</option>
+						<option value="Hungarian Horse">Hungarian Horse</option>
+						<option value="Hungarian Warmbloods">Hungarian Warmbloods</option>
+						<option value="Iberian Warmblood">Iberian Warmblood</option>
+						<option value="Icelandic Horse">Icelandic Horse</option>
+						<option value="Ilia">Ilia</option>
+						<option value="Indian Country Bred Horse">Indian Country Bred Horse</option>
+						<option value="Indian Horse | Indian Pony">Indian Horse | Indian Pony</option>
+						<option value="International Striped Horse">International Striped Horse</option>
+						<option value="Iomud">Iomud</option>
+						<option value="Irish Cob">Irish Cob</option>
+						<option value="Irish Draught">Irish Draught</option>
+						<option value="Irish Hobby">Irish Hobby</option>
+						<option value="Irish Sport Horse">Irish Sport Horse</option>
+						<option value="Israeli Horse">Israeli Horse</option>
+						<option value="Italian Heavy Draft">Italian Heavy Draft</option>
+						<option value="Italian Trotter">Italian Trotter</option>
+						<option value="Jabe">Jabe</option>
+						<option value="Jaca Gallega">Jaca Gallega</option>
+						<option value="Java Pony">Java Pony</option>
+						<option value="Jeju Pony">Jeju Pony</option>
+						<option value="Jennet">Jennet</option>
+						<option value="Jianchang Pony">Jianchang Pony</option>
+						<option value="Jielin Horse">Jielin Horse</option>
+						<option value="Jinhong Horse">Jinhong Horse</option>
+						<option value="Jinzhou">Jinzhou</option>
+						<option value="Jura">Jura</option>
+						<option value="Jutland">Jutland</option>
+						<option value="Kabarda">Kabarda</option>
+						<option value="Kagoshima">Kagoshima</option>
+						<option value="Kaimanawa Horse">Kaimanawa Horse</option>
+						<option value="Kaju Pony">Kaju Pony</option>
+						<option value="Kaldblodstraver">Kaldblodstraver</option>
+						<option value="Kalmyk">Kalmyk</option>
+						<option value="Kandachi">Kandachi</option>
+						<option value="Karabair">Karabair</option>
+						<option value="Karabakh">Karabakh</option>
+						<option value="Karacabey">Karacabey</option>
+						<option value="Karakacan">Karakacan</option>
+						<option value="Karakachan Pony">Karakachan Pony</option>
+						<option value="Kathiawari">Kathiawari</option>
+						<option value="Kazakh Horse">Kazakh Horse</option>
+						<option value="Ke-Er-Qin">Ke-Er-Qin</option>
+						<option value="Kentucky Mountain Saddle Horse">Kentucky Mountain Saddle Horse</option>
+						<option value="Kerry Bog Pony">Kerry Bog Pony</option>
+						<option value="Khani">Khani</option>
+						<option value="Kiger Mustang">Kiger Mustang</option>
+						<option value="Kinsky Horse">Kinsky Horse</option>
+						<option value="Kirdi Pony">Kirdi Pony</option>
+						<option value="Kirghiz">Kirghiz</option>
+						<option value="Kisber Halfbred">Kisber Halfbred</option>
+						<option value="Kiso Horse">Kiso Horse</option>
+						<option value="Kladruby Horse">Kladruby Horse</option>
+						<option value="Kleines Deutsches Reitpferd">Kleines Deutsches Reitpferd</option>
+						<option value="Klepper">Klepper</option>
+						<option value="Knabstrupper">Knabstrupper</option>
+						<option value="Konik Horse">Konik Horse</option>
+						<option value="Kordofani">Kordofani</option>
+						<option value="Kuda-Gayo">Kuda-Gayo</option>
+						<option value="Kumingan">Kumingan</option>
+						<option value="Kundudo">Kundudo</option>
+						<option value="Kushum">Kushum</option>
+						<option value="Kustanai">Kustanai</option>
+						<option value="Kuznetsk Horse">Kuznetsk Horse</option>
+						<option value="Kyrgyz Horse">Kyrgyz Horse</option>
+						<option value="Labem Horse">Labem Horse</option>
+						<option value="Lac la Croix Indian Pony">Lac la Croix Indian Pony</option>
+						<option value="Lakka">Lakka</option>
+						<option value="Landais Pony">Landais Pony</option>
+						<option value="Latgale Trotter">Latgale Trotter</option>
+						<option value="Latvian">Latvian</option>
+						<option value="Lehmkuhlener Pony">Lehmkuhlener Pony</option>
+						<option value="Leutstetten">Leutstetten</option>
+						<option value="Lewitzer Pony">Lewitzer Pony</option>
+						<option value="Lichuan">Lichuan</option>
+						<option value="Lijiang Pony">Lijiang Pony</option>
+						<option value="Limousin Horse">Limousin Horse</option>
+						<option value="Lipizzan">Lipizzan</option>
+						<option value="Lippit Morgan">Lippit Morgan</option>
+						<option value="Lithuanian Heavy Draft">Lithuanian Heavy Draft</option>
+						<option value="Lithuanian Landrace">Lithuanian Landrace</option>
+						<option value="Little Poland Horse">Little Poland Horse</option>
+						<option value="Ljutomer Trotter">Ljutomer Trotter</option>
+						<option value="Llanero">Llanero</option>
+						<option value="Lokai">Lokai</option>
+						<option value="Lombok">Lombok</option>
+						<option value="Losino">Losino</option>
+						<option value="Lundy Pony">Lundy Pony</option>
+						<option value="Lusitano">Lusitano</option>
+						<option value="Lyngen Horse">Lyngen Horse</option>
+						<option value="Macassar">Macassar</option>
+						<option value="Magyar Hidegveru">Magyar Hidegveru</option>
+						<option value="Malakan Horse">Malakan Horse</option>
+						<option value="Mallorquin Horse">Mallorquin Horse</option>
+						<option value="Malopolski">Malopolski</option>
+						<option value="Mangalarga Marchador">Mangalarga Marchador</option>
+						<option value="Mangalarga Paulista">Mangalarga Paulista</option>
+						<option value="Manipuri Pony">Manipuri Pony</option>
+						<option value="Marajoara">Marajoara</option>
+						<option value="Maremmano">Maremmano</option>
+						<option value="Marquesas Islands Horse">Marquesas Islands Horse</option>
+						<option value="Marsh Tacky">Marsh Tacky</option>
+						<option value="Marwari">Marwari</option>
+						<option value="Masuren">Masuren</option>
+						<option value="Mecklenburg">Mecklenburg</option>
+						<option value="Megezh">Megezh</option>
+						<option value="Megrel">Megrel</option>
+						<option value="Menorca">Menorca</option>
+						<option value="Merens Pony">Merens Pony</option>
+						<option value="Messara Horse">Messara Horse</option>
+						<option value="Metis Trotter">Metis Trotter</option>
+						<option value="Mezen">Mezen</option>
+						<option value="Mezohegyes Sport Horse">Mezohegyes Sport Horse</option>
+						<option value="Mimoseano">Mimoseano</option>
+						<option value="Minho">Minho</option>
+						<option value="Miniature Horse">Miniature Horse</option>
+						<option value="Minusin Horse">Minusin Horse</option>
+						<option value="Misaki Pony">Misaki Pony</option>
+						<option value="Missouri Fox Trotting Horse">Missouri Fox Trotting Horse</option>
+						<option value="Miyako Horse">Miyako Horse</option>
+						<option value="Miyazaki">Miyazaki</option>
+						<option value="Mogod Pony">Mogod Pony</option>
+						<option value="Mongolian">Mongolian</option>
+						<option value="Mongolian Wild Horse">Mongolian Wild Horse</option>
+						<option value="Montana Travler">Montana Travler</option>
+						<option value="Monterufoli Pony">Monterufoli Pony</option>
+						<option value="Morab">Morab</option>
+						<option value="Morgan Horse">Morgan Horse</option>
+						<option value="Morna">Morna</option>
+						<option value="Moroccan Barb">Moroccan Barb</option>
+						<option value="Morochuco">Morochuco</option>
+						<option value="Mountain Pleasure Horse">Mountain Pleasure Horse</option>
+						<option value="Mousseye Pony">Mousseye Pony</option>
+						<option value="Moyle Horse">Moyle Horse</option>
+						<option value="Mulassier Horse">Mulassier Horse</option>
+						<option value="Mura">Mura</option>
+						<option value="Murgese">Murgese</option>
+						<option value="Musey Pony">Musey Pony</option>
+						<option value="Mustang">Mustang</option>
+						<option value="Mytilene Horse">Mytilene Horse</option>
+						<option value="M'Bayar Pony">M'Bayar Pony</option>
+						<option value="Namaqua Pony">Namaqua Pony</option>
+						<option value="Nambu Horse">Nambu Horse</option>
+						<option value="Namib Desert Horse">Namib Desert Horse</option>
+						<option value="Nanfan">Nanfan</option>
+						<option value="Narragansett Pacer">Narragansett Pacer</option>
+						<option value="Narym">Narym</option>
+						<option value="National Show Horse">National Show Horse</option>
+						<option value="Navarre Pony">Navarre Pony</option>
+						<option value="Neapolitan">Neapolitan</option>
+						<option value="Nederlands Appaloosa Pony">Nederlands Appaloosa Pony</option>
+						<option value="Nederlands Mini Paarden">Nederlands Mini Paarden</option>
+						<option value="Nederlands Trekpaard">Nederlands Trekpaard</option>
+						<option value="Nefza">Nefza</option>
+						<option value="New Forest Pony">New Forest Pony</option>
+						<option value="New Kirgiz Horse">New Kirgiz Horse</option>
+						<option value="Newfoundland Pony">Newfoundland Pony</option>
+						<option value="Nez Perce Horse">Nez Perce Horse</option>
+						<option value="Nigerian">Nigerian</option>
+						<option value="Nogai Horse">Nogai Horse</option>
+						<option value="Nokota Horse">Nokota Horse</option>
+						<option value="Noma Horse">Noma Horse</option>
+						<option value="Nonius">Nonius</option>
+						<option value="Nooitgedacht Pony">Nooitgedacht Pony</option>
+						<option value="Nordland Horse">Nordland Horse</option>
+						<option value="Norfolk Trotter">Norfolk Trotter</option>
+						<option value="Noriker">Noriker</option>
+						<option value="Norman Cob">Norman Cob</option>
+						<option value="Norman Trotter">Norman Trotter</option>
+						<option value="North African Barb">North African Barb</option>
+						<option value="North Swedish Horse">North Swedish Horse</option>
+						<option value="Northeastern">Northeastern</option>
+						<option value="Northern Ardennais">Northern Ardennais</option>
+						<option value="Norwegian Fjord">Norwegian Fjord</option>
+						<option value="Norwegian Riding Pony">Norwegian Riding Pony</option>
+						<option value="Norwegian Trotter">Norwegian Trotter</option>
+						<option value="Novokirghiz">Novokirghiz</option>
+						<option value="Ob Pony">Ob Pony</option>
+						<option value="Oberlander Horse">Oberlander Horse</option>
+						<option value="Ocracoke">Ocracoke</option>
+						<option value="Old Austrian Warmblood">Old Austrian Warmblood</option>
+						<option value="Old English Black Horse">Old English Black Horse</option>
+						<option value="Oldenburg">Oldenburg</option>
+						<option value="Orlov Trotter">Orlov Trotter</option>
+						<option value="Orlov-Rostopchin">Orlov-Rostopchin</option>
+						<option value="Ostlandhester">Ostlandhester</option>
+						<option value="Outer Banks Ponies">Outer Banks Ponies</option>
+						<option value="Padang Pony">Padang Pony</option>
+						<option value="Paint Pony">Paint Pony</option>
+						<option value="Palomino">Palomino</option>
+						<option value="Pampa Horse">Pampa Horse</option>
+						<option value="Panela">Panela</option>
+						<option value="Panje">Panje</option>
+						<option value="Pantaneiro">Pantaneiro</option>
+						<option value="Paso Fino">Paso Fino</option>
+						<option value="Patibarcina Horse">Patibarcina Horse</option>
+						<option value="Pechora">Pechora</option>
+						<option value="Pentro">Pentro</option>
+						<option value="Percheron">Percheron</option>
+						<option value="Periangan Pony">Periangan Pony</option>
+						<option value="Perkehner Horse">Perkehner Horse</option>
+						<option value="Persano Horse">Persano Horse</option>
+						<option value="Peruvian Paso">Peruvian Paso</option>
+						<option value="Petiso Pony">Petiso Pony</option>
+						<option value="Pindos Pony">Pindos Pony</option>
+						<option value="Pinkafo">Pinkafo</option>
+						<option value="Pintabian">Pintabian</option>
+						<option value="Pinzgauer Horse">Pinzgauer Horse</option>
+						<option value="Piquira Pony">Piquira Pony</option>
+						<option value="Pleven">Pleven</option>
+						<option value="Poitevin">Poitevin</option>
+						<option value="Polesian">Polesian</option>
+						<option value="Polish Konik">Polish Konik</option>
+						<option value="Poney Gallego">Poney Gallego</option>
+						<option value="Poney Mousseye">Poney Mousseye</option>
+						<option value="Poneys Landais">Poneys Landais</option>
+						<option value="Pony of the Americas">Pony of the Americas</option>
+						<option value="Posavina Horse">Posavina Horse</option>
+						<option value="Pottok">Pottok</option>
+						<option value="Poznan Horse">Poznan Horse</option>
+						<option value="Prairie Horse">Prairie Horse</option>
+						<option value="Prairie Pony">Prairie Pony</option>
+						<option value="Priob">Priob</option>
+						<option value="Qatgani Horse">Qatgani Horse</option>
+						<option value="Quarab">Quarab</option>
+						<option value="Quarter Pony">Quarter Pony</option>
+						<option value="Racking Horse">Racking Horse</option>
+						<option value="Rahvan">Rahvan</option>
+						<option value="Rangerbred horse">Rangerbred horse</option>
+						<option value="Rhineland Heavy draft">Rhineland Heavy draft</option>
+						<option value="Riwoche Pony">Riwoche Pony</option>
+						<option value="Roadster">Roadster</option>
+						<option value="Rocky Mountain Horse">Rocky Mountain Horse</option>
+						<option value="Romanian Saddle Horse">Romanian Saddle Horse</option>
+						<option value="Romanian Trotter">Romanian Trotter</option>
+						<option value="Rottaler">Rottaler</option>
+						<option value="Russ">Russ</option>
+						<option value="Russian Don">Russian Don</option>
+						<option value="Russian Heavy Draft">Russian Heavy Draft</option>
+						<option value="Russian Riding Horse">Russian Riding Horse</option>
+						<option value="Russian Trotter">Russian Trotter</option>
+						<option value="Sable Island Pony">Sable Island Pony</option>
+						<option value="Sachsen Warmblood">Sachsen Warmblood</option>
+						<option value="Saddlebred">Saddlebred</option>
+						<option value="Sadecki">Sadecki</option>
+						<option value="Salerno Horse">Salerno Horse</option>
+						<option value="Samolaco">Samolaco</option>
+						<option value="San Fratello Horse">San Fratello Horse</option>
+						<option value="Sandalwood Pony">Sandalwood Pony</option>
+						<option value="Sandan Horse">Sandan Horse</option>
+						<option value="Sanhe">Sanhe</option>
+						<option value="Sardinian">Sardinian</option>
+						<option value="Sarvar">Sarvar</option>
+						<option value="Saxon-Turinga Coldblood">Saxon-Turinga Coldblood</option>
+						<option value="Saxony Warmblood">Saxony Warmblood</option>
+						<option value="Schleswiger Heavy Draft">Schleswiger Heavy Draft</option>
+						<option value="Schwarzwälder Fuchs">Schwarzwälder Fuchs</option>
+						<option value="Scottish Galloway">Scottish Galloway</option>
+						<option value="Scottish Highland Pony">Scottish Highland Pony</option>
+						<option value="Selle Francais">Selle Francais</option>
+						<option value="Selle Francais Pony">Selle Francais Pony</option>
+						<option value="Seminole Pony">Seminole Pony</option>
+						<option value="Senner">Senner</option>
+						<option value="Sertanejo">Sertanejo</option>
+						<option value="Shackleford Banks Horse">Shackleford Banks Horse</option>
+						<option value="Shagya Arabian">Shagya Arabian</option>
+						<option value="Shan Pony">Shan Pony</option>
+						<option value="Sheehan">Sheehan</option>
+						<option value="Shetland Pony">Shetland Pony</option>
+						<option value="Shire Horse">Shire Horse</option>
+						<option value="Silesian">Silesian</option>
+						<option value="Single-Footing Horse">Single-Footing Horse</option>
+						<option value="Sini">Sini</option>
+						<option value="Skogsruss">Skogsruss</option>
+						<option value="Skyros Pony">Skyros Pony</option>
+						<option value="Slovak">Slovak</option>
+						<option value="Slovak Sport Pony">Slovak Sport Pony</option>
+						<option value="Sokolsky">Sokolsky</option>
+						<option value="Somali Pony">Somali Pony</option>
+						<option value="Somme Bay Horse">Somme Bay Horse</option>
+						<option value="Sorraia">Sorraia</option>
+						<option value="South African Miniature">South African Miniature</option>
+						<option value="South African Vlaamperd">South African Vlaamperd</option>
+						<option value="South African Warmblood">South African Warmblood</option>
+						<option value="South German Coldblood">South German Coldblood</option>
+						<option value="Soviet Heavy Draft">Soviet Heavy Draft</option>
+						<option value="Spanish Anglo-Arabian">Spanish Anglo-Arabian</option>
+						<option value="Spanish Barb">Spanish Barb</option>
+						<option value="Spanish Colonial Horse">Spanish Colonial Horse</option>
+						<option value="Spanish Jennet">Spanish Jennet</option>
+						<option value="Spanish Mustang">Spanish Mustang</option>
+						<option value="Spanish Norman">Spanish Norman</option>
+						<option value="Spiti Pony">Spiti Pony</option>
+						<option value="Spotted Saddle Horse">Spotted Saddle Horse</option>
+						<option value="Standardbred">Standardbred</option>
+						<option value="Strelets Horse">Strelets Horse</option>
+						<option value="Sudan Country-Bred">Sudan Country-Bred</option>
+						<option value="Süddeutsches-Kaltblut">Süddeutsches-Kaltblut</option>
+						<option value="Suffolk Punch">Suffolk Punch</option>
+						<option value="Sugarbush Draft">Sugarbush Draft</option>
+						<option value="Sulawesi">Sulawesi</option>
+						<option value="Sumba Pony">Sumba Pony</option>
+						<option value="Sumbawa Pony">Sumbawa Pony</option>
+						<option value="Sunicho">Sunicho</option>
+						<option value="Swedish Ardennes">Swedish Ardennes</option>
+						<option value="Swedish Warmblood">Swedish Warmblood</option>
+						<option value="Swiss Warmblood">Swiss Warmblood</option>
+						<option value="Taishuh">Taishuh</option>
+						<option value="Takhi Horse">Takhi Horse</option>
+						<option value="Tarbes">Tarbes</option>
+						<option value="Tarpan">Tarpan</option>
+						<option value="Tavda">Tavda</option>
+						<option value="Tawleed">Tawleed</option>
+						<option value="Tchenarani">Tchenarani</option>
+						<option value="Tennessee Walking Horse">Tennessee Walking Horse</option>
+						<option value="Tennuvian">Tennuvian</option>
+						<option value="Tersk">Tersk</option>
+						<option value="Thai Pony">Thai Pony</option>
+						<option value="Thessalian">Thessalian</option>
+						<option value="Thoroughbred">Thoroughbred</option>
+						<option value="Tibetan Pony">Tibetan Pony</option>
+						<option value="Tiger Horse">Tiger Horse</option>
+						<option value="Timor Pony">Timor Pony</option>
+						<option value="Tinker Horse">Tinker Horse</option>
+						<option value="Tokara Pony">Tokara Pony</option>
+						<option value="Tolfetano Horse">Tolfetano Horse</option>
+						<option value="Tori">Tori</option>
+						<option value="Trait Du Nord">Trait Du Nord</option>
+						<option value="Trakehner">Trakehner</option>
+						<option value="Trakya">Trakya</option>
+						<option value="Tres Sangres">Tres Sangres</option>
+						<option value="Trote en Gallope">Trote en Gallope</option>
+						<option value="Trottatore Italiano">Trottatore Italiano</option>
+						<option value="Trotteur Francais">Trotteur Francais</option>
+						<option value="Tuigpaard | Tuigpaarden">Tuigpaard | Tuigpaarden</option>
+						<option value="Tunisian Pony">Tunisian Pony</option>
+						<option value="Turk">Turk</option>
+						<option value="Tushin">Tushin</option>
+						<option value="Tuva">Tuva</option>
+						<option value="Tyrol Pesante Rapido">Tyrol Pesante Rapido</option>
+						<option value="Ukrainian Saddle-Riding Horse">Ukrainian Saddle-Riding Horse</option>
+						<option value="Unmol">Unmol</option>
+						<option value="Upper Yenisei">Upper Yenisei</option>
+						<option value="Uzunyayla Horse">Uzunyayla Horse</option>
+						<option value="Venezuelan Criollo">Venezuelan Criollo</option>
+						<option value="Ventasso Horse">Ventasso Horse</option>
+						<option value="Vietnamese Hmong">Vietnamese Hmong</option>
+						<option value="Virginia Highlander">Virginia Highlander</option>
+						<option value="Vlaamperd">Vlaamperd</option>
+						<option value="Vladimir Heavy Draft">Vladimir Heavy Draft</option>
+						<option value="Voronezh Coach">Voronezh Coach</option>
+						<option value="Vyatka">Vyatka</option>
+						<option value="Waler">Waler</option>
+						<option value="Walkaloosa">Walkaloosa</option>
+						<option value="Warlander">Warlander</option>
+						<option value="Washu Horse">Washu Horse</option>
+						<option value="Welara Pony">Welara Pony</option>
+						<option value="Welsh Cob (Section D)">Welsh Cob (Section D)</option>
+						<option value="Welsh Mountain Pony (Secion A)">Welsh Mountain Pony (Secion A)</option>
+						<option value="Welsh Pony (Section B)">Welsh Pony (Section B)</option>
+						<option value="Welsh Pony of Cob Type (Section C)">Welsh Pony of Cob Type (Section C)</option>
+						<option value="Weser-Ems Pony">Weser-Ems Pony</option>
+						<option value="West African Barb">West African Barb</option>
+						<option value="West Norwegian">West Norwegian</option>
+						<option value="Western Sudan Pony">Western Sudan Pony</option>
+						<option value="Westfalen Pony">Westfalen Pony</option>
+						<option value="Westphalian">Westphalian</option>
+						<option value="Wielkopolski">Wielkopolski</option>
+						<option value="Württemberger">Württemberger</option>
+						<option value="Xilingol">Xilingol</option>
+						<option value="Yabou">Yabou</option>
+						<option value="Yakut Horse">Yakut Horse</option>
+						<option value="Yamud">Yamud</option>
+						<option value="Yanqi Horse">Yanqi Horse</option>
+						<option value="Yemeni Horse">Yemeni Horse</option>
+						<option value="Yili Horse">Yili Horse</option>
+						<option value="Yonaguni Horse">Yonaguni Horse</option>
+						<option value="Yorkshire Coach Horse">Yorkshire Coach Horse</option>
+						<option value="Yugoslav Mountain Pony">Yugoslav Mountain Pony</option>
+						<option value="Yunnan">Yunnan</option>
+						<option value="Yururi Island horse">Yururi Island horse</option>
+						<option value="Zangersheide">Zangersheide</option>
+						<option value="Zaniskari Pony">Zaniskari Pony</option>
+						<option value="Zeeland">Zeeland</option>
+						<option value="Zemaituka">Zemaituka</option>
+						<option value="Zweibrücker">Zweibrücker</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select id="gender" name="gender" multiple="multiple" size="4" class="form-control">
+                        <option value="">-- Any --</option>
+                        <option value="Gelding">Gelding</option>
+                        <option value="Mare">Mare</option>
+                        <option value="Stallion">Stallion</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label>Prices:</label>
+                    <input type="text" id="min_price" name="min_price" cols="6" class="form-control">to
+                    <input type="text" id="max_price" name="max_price" cols="6" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+
+
+    </div>
+    <!-- /container -->
+    <footer>
+        <div class="foot">
+            <div class="col-sm-6 clearfix">
+                <p><a href="index.html" class="link">Home</a> | <a href="horses.html" class="link">Horses</a> | <a href="trainers.html" class="link">Trainers</a> | <a href="library.html" class="link">Library</a>
+                </p>
+            </div>
+            <div class="col-sm-6 clearfix">
+                <div class="span4">Share:
+                    <a href="https://plus.google.com/" target="blank">
+                        <img src="images/google.png" height="31" width="31" alt="Google +">
+                    </a>
+                    <a href="https://www.facebook.com/" target="blank">
+                        <img src="images/facebook.png" height="31" width="31" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com/" target="blank">
+                        <img src="images/twitter.png" height="31" width="31" alt="Twitter">
+                    </a>
+                    <a href="http://instagram.com/" target="blank">
+                        <img src="images/instagram.png" height="31" width="31" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+</body>
+
+</html>

@@ -652,6 +652,13 @@ img.horseimage {
 	   font-size: 10pt;
 	 }
 	 
+	 img.detail {
+	     border: 1px solid #0F776E;
+	     margin-bottom: 15px;
+		 margin-top: 15px;
+	     width: 180px;
+	  }
+	 
  }
  @media (min-width: 992px) {
 	 .logo {
@@ -708,9 +715,8 @@ img.horseimage {
 	 }
 	 a.link:hover {
 	   color: #12ADE5;
-	 }
+	 }  
 	 
-  
  }
  @media (max-width: 1200px) {
   

@@ -640,7 +640,7 @@ img.horseimage {
 	 }
 	 /* Search Display */
 	 .searchpanel {
-	   margin-bottom: 20px;
+	   margin-bottom: 10px;
 	   background-color: #fff;
 	   border: 1px solid transparent;
 	   border-radius: 4px;
@@ -651,7 +651,7 @@ img.horseimage {
 	   padding: 5px;
 	 }
 	 .searchpanel-heading {
-	   padding: 10px 15px;
+	   padding: 5px;
 	   border-bottom: 1px solid transparent;
 	   border-top-left-radius: 3px;
 	   border-top-right-radius: 3px;

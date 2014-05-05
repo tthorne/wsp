@@ -638,7 +638,51 @@ img.horseimage {
 	 a.link:hover {
 	   color: #12ADE5;
 	 }
-	 
+	 /* Search Display */
+	 .searchpanel {
+	   margin-bottom: 20px;
+	   background-color: #fff;
+	   border: 1px solid transparent;
+	   border-radius: 4px;
+	   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+	           box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+	 }
+	 .searchpanel-body {
+	   padding: 5px;
+	 }
+	 .searchpanel-heading {
+	   padding: 10px 15px;
+	   border-bottom: 1px solid transparent;
+	   border-top-left-radius: 3px;
+	   border-top-right-radius: 3px;
+	 }
+	 .searchpanel-heading > .dropdown .dropdown-toggle {
+	   color: inherit;
+	 }
+	 .searchpanel-title {
+	   margin-top: 0;
+	   margin-bottom: 0;
+	   font-size: 16px;
+	   color: inherit;
+	 }
+	 .searchpanel-title > a {
+	   color: inherit;
+	 }
+	 .searchpanel-default {
+	   border: 1px solid #87DAE9;
+	 }
+	 .searchpanel-default > .searchpanel-heading {
+	   color: #0F776E;
+	   background-color: #87DAE9;
+	   border-color: #87DAE9;
+	   font-weight: bold;
+	 }
+	 .searchpanel-default > .searchpanel-heading + .searchpanel-collapse .searchpanel-body {
+	   border: 1px solid #87DAE9;
+	 }
+	 .searchpanel-default > .searchpanel-footer + .searchpanel-collapse .searchpanel-body {
+	   border: 1px solid #87DAE9;
+	 }
  }
  @media (min-width: 992px) {
 	 .logo {

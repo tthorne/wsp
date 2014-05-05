@@ -589,10 +589,28 @@ img.horseimage {
 	 }
 	 
 	 img.imglogo {
-	   width: 25%;
+	   width: 100%;
 	 }
 	 .login {
 	 	margin-top: 5px;
+	 }
+	 .form-grp {
+	   margin: 0 5px;
+	 }
+	 .form {
+	   display: inline;
+	   height: 34px;
+	   padding: 6px 12px;
+	   font-size: 14px;
+	   line-height: 1.42857143;
+	   color: #0F776E;
+	   background-color: #fff;
+	   border: 1px solid #12ADE5;
+	   border-radius: 10px;
+	   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	 }
  }
  @media (max-width: 992px) {

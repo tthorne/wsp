@@ -651,39 +651,7 @@ img.horseimage {
 	   padding: 5px;
 	   font-size: 10pt;
 	 }
-	 .searchpanel-heading {
-	   padding: 5px;
-	   border-bottom: 1px solid transparent;
-	   border-top-left-radius: 3px;
-	   border-top-right-radius: 3px;
-	 }
-	 .searchpanel-heading > .dropdown .dropdown-toggle {
-	   color: inherit;
-	 }
-	 .searchpanel-title {
-	   margin-top: 0;
-	   margin-bottom: 0;
-	   font-size: 16px;
-	   color: inherit;
-	 }
-	 .searchpanel-title > a {
-	   color: inherit;
-	 }
-	 .searchpanel-default {
-	   border: 1px solid #87DAE9;
-	 }
-	 .searchpanel-default > .searchpanel-heading {
-	   color: #0F776E;
-	   background-color: #87DAE9;
-	   border-color: #87DAE9;
-	   font-weight: bold;
-	 }
-	 .searchpanel-default > .searchpanel-heading + .searchpanel-collapse .searchpanel-body {
-	   border: 1px solid #87DAE9;
-	 }
-	 .searchpanel-default > .searchpanel-footer + .searchpanel-collapse .searchpanel-body {
-	   border: 1px solid #87DAE9;
-	 }
+	 
  }
  @media (min-width: 992px) {
 	 .logo {

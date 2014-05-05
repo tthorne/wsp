@@ -584,9 +584,13 @@ img.horseimage {
  /* Responsive */
 
 
- @media (max-width: 640px) {
+ @media (max-width: 768px) {
 	 .logo {
 	 	margin: 0 auto;
+	 }
+	 
+	 img.imglogo {
+	   width: 100%;
 	 }
 	 .login {
 	 	margin-top: 5px;

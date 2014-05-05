@@ -599,7 +599,7 @@ img.horseimage {
 	   margin: 0;
 	 }
 	 .form {
-	   display: inline;
+	   display: block;
 	   height: 24px;
 	   padding: 3px 6px;
 	   font-size: 0.875em;

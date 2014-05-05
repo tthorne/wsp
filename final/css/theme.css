@@ -586,9 +586,16 @@ img.horseimage {
 	   margin-bottom: -1px;
 	   background-color: #0F776E;
 	   border-radius: 10px 10px 0 0;
+	   width: 5%;
 	   text-align: center;
 	 }
-	 
+	 .nav-tabs > li > a {
+	   color: #ffffff;
+	   font-size: 0.875em;
+	   font-family: 'Myriad Pro', Verdana, Arial;
+	   font-weight: normal;
+	   text-decoration: none;
+	 }	 
  }
  @media (max-width: 992px) {
    .container {

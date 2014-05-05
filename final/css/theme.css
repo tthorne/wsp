@@ -575,6 +575,21 @@ img.horseimage {
 	 	margin-top: 5px;
 	 }
 	 
+	 /* Nav Bar */
+	 .nav-tabs {
+	   border-bottom: 1px solid #ddd;
+	   margin-top: 50px;
+	   width: 100%;
+	 }
+	 .nav-tabs > li {
+	   float: left;
+	   margin-bottom: -1px;
+	   background-color: #0F776E;
+	   border-radius: 10px 10px 0 0;
+	   width: 5%;
+	   text-align: center;
+	 }
+	 
  }
  @media (max-width: 992px) {
    .container {

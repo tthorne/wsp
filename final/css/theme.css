@@ -571,6 +571,9 @@ img.horseimage {
 	 img.imglogo {
 	   width: 25%;
 	 }
+	 .login {
+	 	margin-top: 5px;
+	 }
 	 
  }
  @media (max-width: 992px) {

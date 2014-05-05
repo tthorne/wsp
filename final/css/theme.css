@@ -643,6 +643,61 @@ img.horseimage {
 	 
  }
  @media (max-width: 992px) {
+	 .logo {
+	 	margin: 0 auto;
+	 }
+	 
+	 img.imglogo {
+	   width: 320px;
+	 }
+	 .login {
+	 	margin-top: 5px;
+	 }
+	 .form-grp {
+	   margin: 0 5px;
+	 }
+	 .form {
+	   display: inline;
+	   height: 34px;
+	   padding: 6px 12px;
+	   font-size: 14px;
+	   line-height: 1.42857143;
+	   color: #0F776E;
+	   background-color: #fff;
+	   border: 1px solid #12ADE5;
+	   border-radius: 10px;
+	   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	 }
+	 img.feature {
+	   border: 1px solid #0F776E;
+	   margin-bottom: 15px;
+	   width: 100%;
+	 }
+	 
+	 /* Footer */
+	 footer {
+	 	background: #12ADE5;
+		height: 114px;
+	 }
+
+	 .foot {
+	 	margin: 0 5px;
+	 	color: #ffffff;
+	 }
+
+	 .span4 {
+	 	float: left;
+	 }
+	 a.link {
+	   color: #ffffff;
+	   text-decoration: none;
+	 }
+	 a.link:hover {
+	   color: #12ADE5;
+	 }
 	 
   
  }

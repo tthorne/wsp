@@ -599,10 +599,10 @@ img.horseimage {
 	   margin: 0;
 	 }
 	 .form {
-	   display: block;
-	   height: 24px;
-	   padding: 3px 6px;
-	   font-size: 0.875em;
+	   display: inline;
+	   height: 34px;
+	   padding: 6px 12px;
+	   font-size: 14px;
 	   line-height: 1.42857143;
 	   color: #0F776E;
 	   background-color: #fff;

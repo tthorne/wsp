@@ -643,6 +643,10 @@ img.horseimage {
 	 .logo {
 	 	margin: 0 auto;
 	 }
+	 
+	 img.imglogo {
+	   width: 100%;
+	 }
 	 .login {
 	 	margin-top: 5px;
 	 }

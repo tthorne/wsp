@@ -69,12 +69,13 @@ h1 {
 .header {
 	background: #12ADE5;
 	border-bottom: 5px solid #87DAE9;
-	margin-top: 50px;
+	margin-top: 51px;
 }
 
 /* Logo */
 .logo {
-	margin: 5px 270px;
+	width: 50%;
+	margin: 15px auto;
 }
 
 /* Login */
@@ -621,7 +622,7 @@ img.horseimage {
 	 /* Footer */
 	 footer {
 	 	background: #12ADE5;
-		height: 50px;
+		height: 60px;
 	 }
 
 	 .foot {

@@ -586,7 +586,7 @@ img.horseimage {
 
  @media (max-width: 768px) {
 	 .logo {
-	 	margin: 0;
+	 	margin: 0 auto;
 	 }
 	 
 	 img.imglogo {

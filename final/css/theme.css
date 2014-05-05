@@ -586,11 +586,11 @@ img.horseimage {
 
  @media (min-width: 640px) {
 	 .logo {
-	 	margin: 0 auto;
+	 	margin: 0;
 	 }
 	 
 	 img.imglogo {
-	   width: 100%;
+	   width: 320px;
 	 }
 	 .login {
 	 	margin-top: 5px;
@@ -648,7 +648,7 @@ img.horseimage {
 	 }
 	 
 	 img.imglogo {
-	   width: 100%;
+	   width: 400px;
 	 }
 	 .login {
 	 	margin-top: 5px;

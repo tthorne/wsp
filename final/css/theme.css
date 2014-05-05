@@ -618,6 +618,28 @@ img.horseimage {
 	   width: 100%;
 	 }
 	 
+	 /* Footer */
+	 footer {
+	 	background: #12ADE5;
+	 }
+
+	 .foot {
+	 	margin: 0 130px;
+	 	color: #ffffff;
+	 	padding-top: 14px;
+	 }
+
+	 .span4 {
+	 	float: right;
+	 }
+	 a.link {
+	   color: #ffffff;
+	   text-decoration: none;
+	 }
+	 a.link:hover {
+	   color: #12ADE5;
+	 }
+	 
  }
  @media (max-width: 992px) {
   

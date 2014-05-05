@@ -576,6 +576,10 @@ img.horseimage {
 	 	padding: 0;
 	 	border-bottom: 5px solid #87DAE9;
 	 }
+	 
+	 .nav {
+		 margin-top: 50px;
+	 }
  }
  @media (max-width: 992px) {
    .container {

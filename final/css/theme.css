@@ -658,6 +658,14 @@ img.horseimage {
 		 margin-top: 30px;
 	     width: 180px;
 	  }
+	  
+	  .search {
+	    position: relative;
+	    min-height: 1px;
+	    padding-right: 15px;
+	    padding-left: 15px;
+		width: 80%;
+	  }
 	 
  }
  @media (min-width: 992px) {

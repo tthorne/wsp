@@ -612,6 +612,11 @@ img.horseimage {
 	   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	 }
+	 img.feature {
+	   border: 1px solid #0F776E;
+	   margin-bottom: 15px;
+	   width: 100%;
+	 }
  }
  @media (max-width: 992px) {
   

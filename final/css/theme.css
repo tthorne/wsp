@@ -564,13 +564,12 @@ img.horseimage {
 
 
  @media (max-width: 768px) {
- img.imglogo {
-	   width: 100%;
+	 .logo {
+	 	margin: 0 auto;
 	 }
-  .search {
-	 	background-color: #0F776E;
-	 	padding: 0;
-	 	border-bottom: 5px solid #87DAE9;
+	 
+	 img.feature {
+	   width: 50%;
 	 }
 	 
  }
